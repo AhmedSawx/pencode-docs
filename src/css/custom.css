@@ -1,0 +1,101 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/**
+ * Any custom CSS loaded here will be applied to the classic theme.
+ */
+
+/* For readability concerns, you should choose a lighter palette in dark mode for better contrast */
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #999;
+}
+
+.token.punctuation {
+  color: #ccc;
+}
+
+.token.property {
+  color: #ff7b72;
+}
+
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f8c555;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #b5f4a5;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #f8c555;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #c792ea;
+}
+
+.token.function,
+.token.class-name {
+  color: #61afef;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #f8c555;
+}
+
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: oklch(0.985 0 0);
+  --ifm-color-primary-dark: oklch(0.955 0 0);
+  --ifm-color-primary-darker: oklch(0.925 0 0);
+  --ifm-color-primary-darkest: oklch(0.895 0 0);
+  --ifm-color-primary-light: oklch(1 0 0);
+  --ifm-color-primary-lighter: oklch(1 0 0);
+  --ifm-color-primary-lightest: oklch(1 0 0);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-background-color: oklch(0.141 0.005 285.823);
+  --ifm-font-color-base: oklch(0.985 0 0);
+  --ifm-card-background-color: oklch(0.141 0.005 285.823);
+  --ifm-footer-background-color: oklch(0.141 0.005 285.823);
+  --ifm-footer-color: oklch(0.985 0 0);
+  --ifm-footer-link-color: oklch(0.985 0 0);
+  --ifm-navbar-background-color: oklch(0.141 0.005 285.823);
+  --ifm-navbar-link-color: oklch(0.985 0 0);
+  --ifm-border-color: oklch(0.274 0.006 286.033);
+}
