@@ -18,5 +18,5 @@ The `Color` modifier is used with the `SET` keyword to change the color of a vec
 ## Example
 
 ```pencode
-Cube(x: 50, y: 50) SET Color('#ff0000')
+Rectangle(x: 25, y: 25, width: 50, height: 50) SET Color('#ff0000')
 ```

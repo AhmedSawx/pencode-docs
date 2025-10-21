@@ -14,7 +14,8 @@ export default function prismIncludeLanguages(prism: typeof Prism): void {
         pattern: /\b(?:AS|CHILD TO|SET)\b/i,
         greedy: true,
     },
-    'class-name': /\b(?:Cube|Line|Layer|Custom|Brush|Field|Spline)(?=\s*\()/,
+    'class-name': /\b(?:Rectangle|Line|Layer|Custom|Brush|Field|Spline|Circle|Triangle)(?=\s*\()/,
+
     'function': /![a-zA-Z_][a-zA-Z0-9_]*/,
     'property': {
         pattern: /(\w+)(?=:)/,

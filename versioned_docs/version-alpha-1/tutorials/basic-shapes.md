@@ -1,33 +1,33 @@
 # Basic Shapes
 
-This tutorial explores how to create and manipulate basic shapes in PenCode. We will focus on the `Cube` and `Line` vector objects, which are fundamental to creating any drawing.
+This tutorial explores how to create and manipulate basic shapes in PenCode. We will focus on the `Rectangle` and `Line` vector objects, which are fundamental to creating any drawing.
 
-## The Cube
+## The Rectangle
 
-The `Cube` object is the simplest way to draw a square on the canvas. It serves as a great starting point for understanding how objects are placed and styled.
+The `Rectangle` object is the simplest way to draw a square or rectangle on the canvas. It serves as a great starting point for understanding how objects are placed and styled.
 
-### Basic Cube
+### Basic Rectangle
 
-As we saw in the "Your First Drawing" tutorial, you can create a cube with a specific position and color.
+As we saw in the "Your First Drawing" tutorial, you can create a rectangle with a specific position and color.
 
 ```pencode
-// A red cube at the center of the canvas
-Cube(x: 0, y: 0, color: 'red')
+// A red square at the center of the canvas
+Rectangle(x: -25, y: -25, width: 50, height: 50, color: 'red')
 ```
 
-### Multiple Cubes
+### Multiple Rectangles
 
 To draw multiple objects, you simply separate their definitions with a comma. This allows you to build up a scene object by object.
 
 ```pencode
-// A blue cube offset to the top-left
-Cube(x: -50, y: -50, color: 'blue'),
+// A blue square offset to the top-left
+Rectangle(x: -75, y: -75, width: 50, height: 50, color: 'blue'),
 
-// A green cube offset to the bottom-right
-Cube(x: 50, y: 50, color: 'green')
+// A green square offset to the bottom-right
+Rectangle(x: 25, y: 25, width: 50, height: 50, color: 'green')
 ```
 
-This code will draw two cubes at different positions on the canvas.
+This code will draw two squares at different positions on the canvas.
 
 ## The Line
 
@@ -60,7 +60,7 @@ The real power of PenCode comes from combining different objects to create a lar
 
 ```pencode
 // A simple house made of a cube and lines for the roof
-Cube(x: 0, y: 50, color: '#cccccc'),
+Rectangle(x: -25, y: 25, width: 50, height: 50, color: '#cccccc'),
 
 // The roof is made of two lines
 Line(x: -50, y: 0, x2: 0, y2: -50) SET Color('red'),

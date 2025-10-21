@@ -1,6 +1,6 @@
 # Brush
 
-Sets the active brush for subsequent drawing commands. This object does not draw anything itself, but it affects how other objects like `Line` and `Cube` are rendered.
+Sets the active brush for subsequent drawing commands. This object does not draw anything itself, but it affects how other objects like `Line` and `Rectangle` are rendered.
 
 ## Parameters
 

@@ -14,6 +14,6 @@ This example creates two layers, `background` and `foreground`, and places a cub
 Layer(colorMode: 'RGB') AS background,
 Layer(colorMode: 'RGB') AS foreground,
 
-Cube(x: 10, y: 10) SET Layer('background'),
-Cube(x: 50, y: 50) SET Layer('foreground')
+Rectangle(x: -15, y: -15, width: 50, height: 50) SET Layer('background'),
+Rectangle(x: 25, y: 25, width: 50, height: 50) SET Layer('foreground')
 ```

@@ -19,9 +19,8 @@ This example creates two layers, `background` and `foreground`, and then uses th
 Layer(colorMode: 'RGB') AS background,
 Layer(colorMode: 'RGB') AS foreground,
 
-// Assign a cube to the background layer
-Cube(x: 10, y: 10) SET Layer('background'),
+Rectangle(x: -15, y: -15, width: 50, height: 50) SET Layer('background'),
 
-// Assign another cube to the foreground layer
-Cube(x: 50, y: 50) SET Layer('foreground')
+// Assign another rectangle to the foreground layer
+Rectangle(x: 25, y: 25, width: 50, height: 50) SET Layer('foreground')
 ```

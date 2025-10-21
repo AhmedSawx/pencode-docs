@@ -14,7 +14,7 @@ The language is designed to be readable and expressive, allowing you to describe
 
 ### Object Creation
 
-The fundamental building block is the object creation statement. This is how you create a `Cube`, `Line`, or any other vector object.
+The fundamental building block is the object creation statement. This is how you create a `Rectangle`, `Line`, or any other vector object.
 
 **Syntax:**
 ```pencode
@@ -23,8 +23,8 @@ ObjectName(parameter1: value1, parameter2: value2)
 
 **Example:**
 ```pencode
-// Creates a Cube at position x=10, y=20 with the color red.
-Cube(x: 10, y: 20, color: 'red')
+// Creates a Rectangle at position x=10, y=20 with the color red.
+Rectangle(x: 10, y: 20, width: 50, height: 50, color: 'red')
 ```
 
 ### Parameters: Named vs. Unnamed (Ordered)
@@ -78,7 +78,7 @@ An error occurs if you try to assign a value to the same parameter twice.
 
 ```pencode
 // This will cause an error!
-Cube(30, 40, x: 50)
+Rectangle(30, 40, 50, 50, x: 50)
 ```
 
 **Why it fails:**
@@ -99,7 +99,7 @@ Numbers can be integers or floating-point values. They are used for coordinates,
 
 ```pencode
 // Examples of using numbers
-Cube(x: 50, y: 75.5)
+Rectangle(x: 50, y: 75.5, width: 50, height: 50)
 Line(x: 0, y: 0, x2: 100, y2: 100)
 ```
 
@@ -118,7 +118,7 @@ This is often used for colors, but can also be used for more complex logic, like
 
 ```pencode
 // Examples of using the Any type
-Cube(color: 'red')
+Rectangle(color: 'red')
 Custom(draw: 'p.ellipse(10, 20, 30, 30)')
 ```
 
@@ -136,7 +136,7 @@ ObjectName(...) AS objectName
 
 **Example:**
 ```pencode
-Cube(x: 0, y: 0) AS myCube
+Rectangle(x: 0, y: 0) AS myRectangle
 ```
 
 ## Child Objects
@@ -150,11 +150,10 @@ ObjectName(...) CHILD TO parentName
 
 **Example:**
 ```pencode
-// First, create a named parent object.
-Cube(x: 50, y: 50) AS parentCube,
+Rectangle(x: 50, y: 50) AS parentRectangle,
 
-// This Cube's position (10, 10) is relative to parentCube (final position: 60, 60).
-Cube(x: 10, y: 10) CHILD TO parentCube
+// This Rectangle's position (10, 10) is relative to parentRectangle (final position: 60, 60).
+Rectangle(x: 10, y: 10) CHILD TO parentRectangle
 ```
 
 ## Applying Modifiers
@@ -166,10 +165,12 @@ Modifiers change the properties of an object. They are applied using the `SET` k
 ObjectName(...) SET ModifierName('value')
 ```
 
+Some of the most common modifiers are `Color`, `Layer`, and `Fill`. For a complete list of all available modifiers, please see the [Modifier Reference](../language-reference/modifiers/color).
+
 **Example:**
 ```pencode
 // Creates a cube and then sets its color to blue.
-Cube(x: 0, y: 0) SET Color('blue')
+Rectangle(x: 0, y: 0) SET Color('blue')
 ```
 
 ## Cloning Objects
@@ -186,8 +187,8 @@ You can create a copy of a named object using the `!` prefix. This is useful for
 **Example:**
 ```pencode
 // Create a template object.
-Cube(color: 'blue') AS blueCube,
+Rectangle(color: 'blue') AS blueRectangle,
 
 // Clone the template and give it a new position.
-!blueCube(x: 50, y: 50)
+!blueRectangle(x: 50, y: 50)
 ```

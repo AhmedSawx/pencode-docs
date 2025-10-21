@@ -40,7 +40,7 @@ Brush(type: 'pen', color: 'green', size: 10),
 Line(x: -100, y: 0, x2: 100, y2: 0),
 
 // This cube will also be drawn with the green pen
-Cube(x: 0, y: 0)
+Rectangle(x: -25, y: -25, width: 50, height: 50)
 ```
 
 ## Changing Brushes
@@ -54,9 +54,22 @@ Line(x: -100, y: -50, x2: 100, y2: -50),
 
 // Switch to a thin red spray paint for the next shape
 Brush(type: 'spray', color: 'red', size: 2),
-Cube(x: 0, y: 50)
+Rectangle(x: -25, y: 25, width: 50, height: 50)
 ```
 
 ## Available Brushes
 
-PenCode comes with a variety of built-in brushes, such as `pen`, `spray`, `marker`, and more. You can see a complete list of available brushes by navigating to the **Brushes** tab in the workspace.
+PenCode comes with a variety of built-in brushes, courtesy of the `p5.brush` library. These brushes provide a range of textures and styles to bring your artwork to life.
+
+**Default Brushes:**
+- 2B
+- HB
+- 2H
+- cpencil
+- pen
+- rotring
+- spray
+- marker
+- marker2
+- charcoal
+- hatch_brush

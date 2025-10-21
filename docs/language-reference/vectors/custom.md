@@ -18,8 +18,8 @@ You must prefix all p5.js functions with `p.` (e.g., `p.fill(255)`, `p.rect(10, 
 
 ## Example
 
-This example uses the `Custom` object to draw a triangle, a shape not provided as a standard vector object.
+This example uses the `Custom` object to draw an ellipse.
 
 ```pencode
-Custom(draw: 'p.triangle(30, 75, 58, 20, 86, 75)')
+Custom(draw: 'p.ellipse(0, 0, 50, 50)')
 ```
