@@ -78,7 +78,7 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://github.com/facebook/docusaurus", //TODO: replace with actual repo
+          href: "https://github.com/AhmedSawx/pencode",
           label: "GitHub",
           position: "right",
         },
@@ -97,28 +97,11 @@ const config: Config = {
           ],
         },
         {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "X",
-              href: "https://x.com/docusaurus",
-            },
-          ],
-        },
-        {
           title: "More",
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus", //TODO: replace with actual repo
+              href: "https://github.com/AhmedSawx/pencode", //TODO: replace with actual repo
             },
           ],
         },
