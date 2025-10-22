@@ -101,7 +101,7 @@ const config: Config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/AhmedSawx/pencode", //TODO: replace with actual repo
+              href: "https://github.com/AhmedSawx/pencode",
             },
           ],
         },
