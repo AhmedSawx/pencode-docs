@@ -30,4 +30,4 @@ npm run build
 
 ## Contributing
 
-Contributions are welcome. Please refer to the [contribution guidelines](/docs/intro#contributing-to-pencode) for more information.
+Contributions are welcome. Please refer to the [contribution guidelines](https://ahmedsawx.github.io/pencode-docs/#contributing-to-pencode) for more information.
